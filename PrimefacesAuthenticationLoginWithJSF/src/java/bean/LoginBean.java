@@ -1,6 +1,7 @@
 
 package bean;
 
+import dao.*;
 import java.io.Serializable;
 
 public class LoginBean implements Serializable{
@@ -32,5 +33,10 @@ public class LoginBean implements Serializable{
         this.uname = uname;
     }
     
-    
+    public String loginProject(){
+        boolean result=UserDAO.login(uname, password);
+        if(result){
+            
+        }
+    }
 }
