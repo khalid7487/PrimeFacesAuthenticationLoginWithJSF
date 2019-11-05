@@ -13,7 +13,13 @@
                 <h:panelGrid id="loginPanel" columns="2">
                     <h:outputText value="Username"/>
                     <p:inputText id="username" value="#{loginBean.uname}"></p:inputText>
-                    
+                    <p:spacer></p:spacer>
+                    <p:message for="username"></p:message>
+                    <p:outputLabel value="Password"/>
+                    <p:password id="password" value="#{loginBean.password}" feedback="false"></p:password>
+                    <p:spacer></p:spacer>
+                    <p:message for="password"></p:message>
+                    <p:commandButton action="#{loginBean.loginProject()}" value="Login" update="loginForm" ajax="true"></p:commandButton>
                 </h:panelGrid>
             </p:panel>
         </h:form>
