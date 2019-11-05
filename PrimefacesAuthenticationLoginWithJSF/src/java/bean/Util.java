@@ -1,4 +1,3 @@
-
 package bean;
 
 import javax.faces.context.FacesContext;

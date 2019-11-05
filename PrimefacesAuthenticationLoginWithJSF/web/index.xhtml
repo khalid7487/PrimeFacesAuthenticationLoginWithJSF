@@ -12,7 +12,8 @@
             <p:panel header="Login" style="width: 360px;">
                 <h:panelGrid id="loginPanel" columns="2">
                     <h:outputText value="Username"/>
-                    <p:inputText id="username" />
+                    <p:inputText id="username" value="#{loginBean.uname}"></p:inputText>
+                    
                 </h:panelGrid>
             </p:panel>
         </h:form>
